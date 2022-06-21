@@ -10,4 +10,4 @@
 
 -JS
 
--Adobe photoshop
++Adobe photoshop
