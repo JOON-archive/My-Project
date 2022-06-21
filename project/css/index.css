@@ -1,0 +1,196 @@
+body {
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.container .Gundam {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 0px 20px;
+}
+
+.container .Gundam .unit {
+    width: 200px;
+    height: 100px;
+    margin: 4px;
+    padding: 3px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #555;
+    transform: skewX(-14deg);
+    transition: transform .1s,
+        background-color .6s;
+    overflow: hidden;
+}
+
+.container .Gundam .unit:hover {
+    background-color: #00aeff;
+    transform: skewX(-14deg) scale(1.8);
+    z-index: 1;
+}
+
+.container .Gundam .unit .image {
+    width: 140%;
+    height: 100%;
+    background-position: center;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    transform: skewX(14deg) translateX(-16px);
+
+}
+
+.container .Gundam .unit span {
+    text-align: start;
+    font-size: large;
+    display: block;
+    font-weight: 700;
+}
+
+.container .Gundam .unit:nth-child(1) .image {
+    background-image: url(../images/unit1.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(2) .image {
+    background-image: url(../images/unit2.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(3) .image {
+    background-image: url(../images/unit3.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(4) .image {
+    background-image: url(../images/unit4.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(5) .image {
+    background-image: url(../images/unit5.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(6) .image {
+    background-image: url(../images/unit6.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(7) .image {
+    background-image: url(../images/unit7.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(8) .image {
+    background-image: url(../images/unit8.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(9) .image {
+    background-image: url(../images/unit9.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(10) .image {
+    background-image: url(../images/unit10.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(11) .image {
+    background-image: url(../images/unit11.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(12) .image {
+    background-image: url(../images/unit12.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(13) .image {
+    background-image: url(../images/unit13.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(14) .image {
+    background-image: url(../images/unit14.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(15) .image {
+    background-image: url(../images/unit15.png);
+    cursor: pointer;
+}
+
+
+.container .logo {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container .logo img {
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.youtube {
+    position: relative;
+    height: 500px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.youtube .youtube__area {
+    width: 1920px;
+    background-color: rgb(15, 218, 25);
+    position: absolute;
+    left: 50%;
+    margin-left: calc(1920px / -2);
+    top: 0;
+    margin-top: calc(1920*9 / 16 / -2);
+}
+
+.youtube .youtube__area::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.youtube .youtube__cover {
+    background-image: url("../images/video_cover_pattern.png");
+    background-color: rgba(0, 0, 0, .3);
+    /* 30% 불투명도 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#player {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.youtube .inner {
+    height: 900px;
+}
