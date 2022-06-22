@@ -6,6 +6,20 @@ body {
     background-attachment: fixed;
 }
 
+
+.goPage h1 {
+    color: greenyellow;
+    font-family: fantasy;
+    font-size: large;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px 0px 20px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
 .container {
     padding: 50px 0;
 }
@@ -20,7 +34,7 @@ body {
 }
 
 .container .Gundam .unit {
-    width: 200px;
+    width: 140px;
     height: 100px;
     margin: 4px;
     padding: 3px;
@@ -133,6 +147,43 @@ body {
 }
 
 
+.container .Gundam .unit:nth-child(16) .image {
+    background-image: url(../images/unit16.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(17) .image {
+    background-image: url(../images/unit17.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(18) .image {
+    background-image: url(../images/unit18.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(19) .image {
+    background-image: url(../images/unit19.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(20) .image {
+    background-image: url(../images/unit20.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(21) .image {
+    background-image: url(../images/unit21.png);
+    cursor: pointer;
+}
+
+.container .Gundam .unit:nth-child(22) .image {
+    background-image: url(../images/unit22.png);
+    cursor: pointer;
+}
+
+
+
 .container .logo {
     max-width: 300px;
     margin: 0 auto;
@@ -148,13 +199,17 @@ body {
 
 
 .youtube {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    height: 500px;
+    height: 800px;
     background-color: #333;
     overflow: hidden;
 }
 
 .youtube .youtube__area {
+    display: flex;
+    flex-wrap: wrap;
     width: 1920px;
     background-color: rgb(15, 218, 25);
     position: absolute;

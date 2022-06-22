@@ -1,266 +1,213 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Welcome Junsu Page!!</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>MAIN PAGE</title>
 
 
-    <!--파비콘-->
-    <link rel="icon" href="./images/fav.png" />
-    <!--브라우저 스타일 초기화-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
-    />
-    <!--Google Fonts - 나눔고딕-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--Google Material Icons-->
+  <!--파비콘-->
+  <link rel="icon" href="./images/fav.png" />
+  <!--브라우저 스타일 초기화-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <!--Google Fonts - 나눔고딕-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+  <!--Google Material Icons-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 
-    <!--GSAP & ScrollToPlugin-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
-      integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
-      crossorigin="anonymous"
-    ></script>
+  <!--GSAP & ScrollToPlugin-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"
+    integrity="sha512-nTHzMQK7lwWt8nL4KF6DhwLHluv6dVq/hNnj2PBN0xMl2KaMm1PM02csx57mmToPAodHmPsipoERRNn4pG7f+Q=="
+    crossorigin="anonymous"></script>
 
-    <!--Swiper(공지)-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css"
-    />
-    <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
-    
+  <!--Swiper(공지)-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
 
-    <!--ScrollMagic-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-    <!--Lodash-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
-      integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/youtube.js"></script>
-    <script defer src="./js/main.js"></script>
-    <!-- defer HTMl 이 준비되면 실행되도록 -->
-  </head>
-  <body>
-    <!--HEADER-->
-    <header>
-      <div class="inner">
-        <a href="index.html" class="logo">
-          <img src="./images/logo_S.png" alt="logo" />
-        </a>
 
-        <div class="sub-menu">
-          <ul class="menu">
-            <li>
-              <a href="/signin">Sign In</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">My Pages</a>
-            </li>
-            <li>
-              <a href="javascript:void(0)">Ideas</a>
-            </li>
-          </ul>
-          <div class="search">
-            <input type="text" />
-            <span class="material-icons">search</span>
-          </div>
-        </div>
-        <ul class="main-menu">
-          <li class="item">
-            <div class="item__name">CHARACTERS</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>UC</h4>
-                    <ul>
-                      <li>Amuro Ray</li>
-                      <li>Char aznable</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>UC</h4>
-                    <ul>
-                      <li>Amuro Ray</li>
-                      <li>Char aznable</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>UC</h4>
-                    <ul>
-                      <li>Amuro Ray</li>
-                      <li>Char aznable</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>UC</h4>
-                    <ul>
-                      <li>Amuro Ray</li>
-                      <li>Char aznable</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>UC</h4>
-                    <ul>
-                      <li>Amuro Ray</li>
-                      <li>Char aznable</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <h4>UC</h4>
-                    <ul>
-                      <li>Amuro Ray</li>
-                      <li>Char aznable</li>
-                    </ul>
-                  </li>
-              </div>
-            </div>
+  <!--ScrollMagic-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!--Lodash-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+    integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/main.js"></script>
+  <!-- defer HTMl 이 준비되면 실행되도록 -->
+</head>
+
+<body>
+  <!--HEADER-->
+  <header>
+    <div class="inner">
+      <a href="index.html" class="logo">
+        <img src="./images/logo_S.png" alt="logo" />
+      </a>
+
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+            <a href="strike.html">Sign In</a>
           </li>
-          <li class="item">
-            <div class="item__name">MECHANIC</div>
-            <div class="item__contents">
-              <div class="contents__menu">
-                <ul class="inner">
-                  <li>
-                    <h4>UC</h4>
-                    <ul>
-                      <li>RX-78-2 GUNDAM</li>
-                      <li>MS-06 ZAKU II</li>
-                    </ul>
-                  </li>
-              </div>
+          <li>
+            <a href="strike.html">My Pages</a>
+          </li>
+          <li>
+            <a href="info.html">Ideas</a>
+          </li>
+        </ul>
+        <div class="search">
+          <input type="text" />
+          <span class="material-icons">search</span>
+        </div>
+      </div>
+      <ul class="main-menu">
+        <li class="item">
+          <div class="item__name">CHARACTERS</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>UC</h4>
+                  <ul>
+                    <li onclick="location.href='info.html'">Amuro Ray</li>
+                    <li onclick="location.href='info.html'">Char aznable</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>UC</h4>
+                  <ul>
+                    <li onclick="location.href='info.html'">Amuro Ray</li>
+                    <li onclick="location.href='info.html'">Char aznable</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>UC</h4>
+                  <ul>
+                    <li onclick="location.href='info.html'">Amuro Ray</li>
+                    <li onclick="location.href='info.html'">Char aznable</li>
+                  </ul>
+                </li>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__name">MECHANIC</div>
+          <div class="item__contents">
+            <div class="contents__menu">
+              <ul class="inner">
+                <li>
+                  <h4>UC</h4>
+                  <ul>
+                    <li onclick="location.href='info.html'">RX-78-2 GUNDAM</li>
+                    <li onclick="location.href='info.html'">MS-06 ZAKU II</li>
+                  </ul>
+                </li>
+            </div>
+          </div>
+    </div>
+    <!--BADGES-->
+    <div class="badges">
+      <div class="badge">
+        <img src="./images/badge1.png" alt="Badge" onclick="location.href='strike.html'" />
+      </div>
+      <div class="badge">
+        <img src="./images/badge2.PNG" alt="Badge" onclick="location.href='strike.html'" />
       </div>
     </div>
-      <!--BADGES-->
-      <div class="badges">
-        <div class="badge">
-          <img src="./images/badge1.png" alt="Badge" />
-        </div>
-        <div class="badge">
-          <img src="./images/badge2.PNG" alt="Badge" />
-        </div>
-      </div>
-    </header>
+  </header>
 
-    <!--VISUAL-->
-    <section class="visual">
-      <div class="inner">
-        <div class="title fade-in">
-          <img
-            src="./images/visual_title.png"
-            alt="doubleO"
-          />
-          <a href="javascript:void(0)" class="btn btn--red">더 보기</a>
-        </div>
-        <div class="fade-in">
-          <img
-            src="./images/setsuna3.png"
-            alt="세츠나"
-            class="Setuna image"
-          />
-        </div>
-        <div class="fade-in">
-          <img
-            src="./images/LockOn.png"
-            alt="록온"
-            class="LockOn image"
-          />
+  <!--VISUAL-->
+  <section class="visual">
+    <div class="inner">
+      <div class="title fade-in">
+        <img src="./images/visual_title.png" alt="doubleO" />
+        <a href="javascript:void(0)" class="btn btn--red" onclick="location.href='strike.html'">더 보기</a>
+      </div>
+      <div class="fade-in">
+        <img src="./images/setsuna3.png" alt="세츠나" class="Setuna image" />
+      </div>
+      <div class="fade-in">
+        <img src="./images/LockOn.png" alt="록온" class="LockOn image" />
         <div class="fade-in">
           <img src="./images/Allelujah.png" alt="알렐루야" class="spoon" />
         </div>
       </div>
-    </section>
+  </section>
 
-    <!--NOTICE-->
-    <section class="notice">
-      <!--NOTICE LINE-->
-      <div class="notice-line">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
-        <div class="inner">
-          <div class="inner__left">
-            <h2>공지사항</h2>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >테스트 페이지 입니다</a
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >테스트 페이지 입니다</a
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >테스트 페이지 입니다</a
-                  >
-                </div>
-                <div class="swiper-slide">
-                  <a href="javascript:void(0)"
-                    >테스트 페이지 입니다</a
-                  >
-                </div>
+  <!--NOTICE-->
+  <section class="notice">
+    <!--NOTICE LINE-->
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="inner__left">
+          <h2>공지사항</h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" onclick="location.href='strike.html'">테스트 페이지 입니다</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" onclick="location.href='strike.html'">테스트 페이지 입니다</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" onclick="location.href='strike.html'">테스트 페이지 입니다</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)" onclick="location.href='strike.html'">테스트 페이지 입니다</a>
               </div>
             </div>
-            <a href="javascript:void(0)" class="notice-line__more">
-              <span class="material-icons">add_circle</span>
-            </a>
           </div>
+          <a href="javascript:void(0)" class="notice-line__more">
+            <span class="material-icons">add_circle</span>
+          </a>
+        </div>
 
-          <div class="inner__right">
-            <h2>공지사항2</h2>
-            <div class="toggle-promotion open">
-              <div class="material-icons">upload</div>
-            </div>
+        <div class="inner__right" onclick="location.href='strike.html'">
+          <h2>공지사항2</h2>
+          <div class="toggle-promotion open">
+            <div class="material-icons">upload</div>
           </div>
         </div>
       </div>
+    </div>
 
-<!-- FOOTER -->
-<footer>
-  <div class="inner">
-    <ul class="menu">
-      <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
-      <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-      <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-    </ul>
-<div class="btn-group">
-  <a href="javascript:void(0)" class="btn btn--while">찾아오시는 길</a>
-  <a href="javascript:void(0)" class="btn btn--while">신규입점제의</a>
-  <a href="javascript:void(0)" class="btn btn--while">사이트 맵</a>
-</div>
-  <div class="info">
-    <span>사업자등록번호 000-12-345678</span>
-    <span>제작자 : 김준수</span>
-    <span>Phone: 010) 524x-xxxx / E-MAIL : okss22s@hanmail.net</span>
-  </div>
-  <p class="copyright">
-    &copy; <span class="this-year"></span> made in Junsu.
-  </p>
-  <img src="images/logo_SS.png" alt="" class="logo" />
-  </div>
-</footer>
-  <div id="to-top">
-    <div class="material-icons">arrow_upward</div>
-  </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="inner">
+        <ul class="menu">
+          <li><a href="javascript:void(0)" class="green" onclick="location.href='strike.html'">개인정보처리방침</a></li>
+          <li><a href="javascript:void(0)" onclick="location.href='strike.html'">홈페이지 이용약관</a></li>
+          <li><a href="javascript:void(0)" onclick="location.href='strike.html'">위치정보 이용약관</a></li>
+        </ul>
+        <div class="btn-group">
+          <a href="javascript:void(0)" class="btn btn--while" onclick="location.href='strike.html'">찾아오시는 길</a>
+          <a href="javascript:void(0)" class="btn btn--while" onclick="location.href='strike.html'">사이트 맵</a>
+        </div>
+        <div class="info">
+          <span>사업자등록번호 000-12-345678</span>
+          <span>제작자 : 김준수</span>
+          <span>Phone: 010) 524x-xxxx / E-MAIL : okss22s@hanmail.net</span>
+        </div>
+        <p class="copyright">
+          &copy; <span class="this-year"></span> made in Junsu.
+        </p>
+        <img src="images/logo_SS.png" alt="" class="logo" onclick="location.href='index.html'" />
+      </div>
+    </footer>
+    <div id="to-top">
+      <div class="material-icons">arrow_upward</div>
+    </div>
 
 </body>
+
 </html>
